@@ -1,0 +1,111 @@
+html,body,#container,#TheGame{
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+}
+body{
+	background:black;
+}
+#container{
+	text-align:center;
+	width:100%;
+}
+#TheGame{
+	border: 3px solid black;
+	margin-top:25px;
+	-webkit-animation: hue 15s infinite;
+	-moz-animation: hue 15s infinite;
+	-ms-animation: hue 15s infinite;
+	-o-animation: hue 15s infinite;
+}
+#otherContent{
+	position:relative;
+	top:-602px;
+	width:800px;
+	height:600px;
+	margin:auto;
+}
+#timePanel{
+	width:310px;
+	height:61px;
+	background:url(images/timeContainer.png);
+	position: absolute;
+	right: 0px;
+	top: -1px;
+}
+#timePanel p{
+	color:white;
+	text-align: right;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 33px;
+	margin: 1px;
+	margin-right: 23px;
+}
+#seconds{
+	font-size: 48px;
+}
+#centiseconds{
+	font-size: 33px;
+}
+#notybox{
+	position: absolute;
+	bottom: 30px;
+	right: -5px;
+	width: 250px;
+	height: 43px;
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 0px 43px rgba(0, 0, 0, 0.44);
+	color: white;
+	font-size: 40px;
+	font-family: Arial;
+	padding: 25px;
+	padding-left: 40px;
+	text-shadow:0px 0px 20px #000;
+	border: 3px solid rgba(0,0,0,0.4);
+	-webkit-transition-duration:0.5s;
+	-webkit-transform: perspective(280) rotateY(-90deg);
+	-webkit-animation: glow 2s infinite linear;
+	-moz-animation: glow 2s infinite linear;
+	-ms-animation: glow 2s infinite linear;
+	-o-animation: glow 2s infinite linear;
+	cursor: default;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-o-user-select:none;
+}
+.showed{
+	-webkit-transform: perspective(180) rotateY(-25deg) !important;
+	/*right: -5px !important;*/
+}
+@-webkit-keyframes hue{
+	0%   {-webkit-filter:hue-rotate(0deg);}
+	100% {-webkit-filter:hue-rotate(360deg);}
+}@-moz-keyframes hue{
+	0%   {-moz-filter:hue-rotate(0deg);}
+	100% {-moz-filter:hue-rotate(360deg);}
+}@-ms-keyframes hue{
+	0%   {-ms-filter:hue-rotate(0deg);}
+	100% {-ms-filter:hue-rotate(360deg);}
+}@-o-keyframes hue{
+	0%   {-o-filter:hue-rotate(0deg);}
+	100% {-o-filter:hue-rotate(360deg);}
+}
+@-webkit-keyframes glow{
+	0%   {opacity: 1}
+	50%   {opacity: 0.5}
+	100% {opacity: 1}
+}@-moz-keyframes glow{
+	0%   {opacity: 1}
+	50%   {opacity: 0.5}
+	100% {opacity: 1}
+}@-ms-keyframes glow{
+	0%   {opacity: 1}
+	50%   {opacity: 0.5}
+	100% {opacity: 1}
+}@-o-keyframes glow{
+	0%   {opacity: 1}
+	50%   {opacity: 0.5}
+	100% {opacity: 1}
+}
